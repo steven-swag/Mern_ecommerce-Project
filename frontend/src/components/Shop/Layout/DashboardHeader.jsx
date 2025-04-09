@@ -13,27 +13,29 @@ const DashboardHeader = () => {
       <div>
         <Link to="/dashboard">
           <img
-            src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+            src="https://storage.googleapis.com/pod_public/1300/245954.png"
             alt=""
+            width="100"
+            
           />
         </Link>
       </div>
       <div className="flex items-center">
         <div className="flex items-center mr-4">
-          <Link to="/dashboard/cupouns" className="800px:block hidden">
+          {/* <Link to="/dashboard/cupouns" className="800px:block hidden">
             <AiOutlineGift
               color="#555"
               size={30}
               className="mx-5 cursor-pointer"
             />
-          </Link>
-          <Link to="/dashboard-events" className="800px:block hidden">
+          </Link> */}
+          {/* <Link to="/dashboard-events" className="800px:block hidden">
             <MdOutlineLocalOffer
               color="#555"
               size={30}
               className="mx-5 cursor-pointer"
             />
-          </Link>
+          </Link> */}
           <Link to="/dashboard-products" className="800px:block hidden">
             <FiShoppingBag
               color="#555"

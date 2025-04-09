@@ -152,10 +152,10 @@ const ProductDetails = ({ data }) => {
                 <p>{data.description}</p>
                 <div className="flex pt-3">
                   <h4 className={`${styles.productDiscountPrice}`}>
-                    {data.discountPrice}$
+                    {data.discountPrice} RS
                   </h4>
                   <h3 className={`${styles.price}`}>
-                    {data.originalPrice ? data.originalPrice + "$" : null}
+                    {data.originalPrice ? data.originalPrice + "RS" : null}
                   </h3>
                 </div>
 
@@ -177,7 +177,7 @@ const ProductDetails = ({ data }) => {
                       +
                     </button>
                   </div>
-                  <div>
+                  {/* <div>
                     {click ? (
                       <AiFillHeart
                         size={30}
@@ -195,7 +195,7 @@ const ProductDetails = ({ data }) => {
                         title="Add to wishlist"
                       />
                     )}
-                  </div>
+                  </div> */}
                 </div>
                 <div
                   className={`${styles.button} !mt-6 !rounded !h-11 flex items-center`}

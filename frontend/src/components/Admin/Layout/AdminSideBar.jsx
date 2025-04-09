@@ -28,7 +28,7 @@ const AdminSideBar = ({ active }) => {
           </h5>
         </Link>
       </div>
-
+{ false &&(
       <div className="w-full flex items-center p-4">
         <Link to="/admin-orders" className="w-full flex items-center">
           <FiShoppingBag
@@ -44,7 +44,7 @@ const AdminSideBar = ({ active }) => {
           </h5>
         </Link>
       </div>
-
+)}
       <div className="w-full flex items-center p-4">
         <Link to="/admin-sellers" className="w-full flex items-center">
           <GrWorkshop

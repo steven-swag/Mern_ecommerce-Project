@@ -35,7 +35,7 @@ router.post("/create-user", async (req, res, next) => {
 
     const activationToken = createActivationToken(user);
 
-    const activationUrl = `https://eshop-tutorial-pyri.vercel.app/activation/${activationToken}`;
+    const activationUrl = `http://localhost:3000/activation/${activationToken}`;
 
     try {
       await sendMail({
@@ -157,11 +157,12 @@ router.get(
   "/logout",
   catchAsyncErrors(async (req, res, next) => {
     try {
-      res.cookie("token", null, {
-        expires: new Date(Date.now()),
+      res.cookie("token", "", {
+        expires: new Date(0),
         httpOnly: true,
         sameSite: "none",
         secure: true,
+        path:"/",
       });
       res.status(201).json({
         success: true,

@@ -26,15 +26,15 @@ import {
   ShopDashboardPage,
   ShopCreateProduct,
   ShopAllProducts,
-  ShopCreateEvents,
+  //ShopCreateEvents,
   ShopAllEvents,
-  ShopAllCoupouns,
+  //ShopAllCoupouns,
   ShopPreviewPage,
   ShopAllOrders,
   ShopOrderDetails,
-  ShopAllRefunds,
-  ShopSettingsPage,
-  ShopWithDrawMoneyPage,
+  //ShopAllRefunds,
+  //ShopSettingsPage,
+  //ShopWithDrawMoneyPage,
   ShopInboxPage,
 } from "./routes/ShopRoutes";
 import {
@@ -43,8 +43,8 @@ import {
   AdminDashboardSellers,
   AdminDashboardOrders,
   AdminDashboardProducts,
-  AdminDashboardEvents,
-  AdminDashboardWithdraw
+  //AdminDashboardEvents,
+  //AdminDashboardWithdraw
 } from "./routes/AdminRoutes";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -162,14 +162,14 @@ const App = () => {
             </SellerProtectedRoute>
           }
         />
-        <Route
+        {/* <Route
           path="/settings"
           element={
             <SellerProtectedRoute>
               <ShopSettingsPage />
             </SellerProtectedRoute>
           }
-        />
+        /> */}
         <Route
           path="/dashboard"
           element={
@@ -194,14 +194,14 @@ const App = () => {
             </SellerProtectedRoute>
           }
         />
-        <Route
+        {/* <Route
           path="/dashboard-refunds"
           element={
             <SellerProtectedRoute>
               <ShopAllRefunds />
             </SellerProtectedRoute>
           }
-        />
+        /> */}
 
         <Route
           path="/order/:id"
@@ -219,38 +219,38 @@ const App = () => {
             </SellerProtectedRoute>
           }
         />
-        <Route
+        {/* <Route
           path="/dashboard-create-event"
           element={
             <SellerProtectedRoute>
               <ShopCreateEvents />
             </SellerProtectedRoute>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/dashboard-events"
           element={
             <SellerProtectedRoute>
               <ShopAllEvents />
             </SellerProtectedRoute>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/dashboard-coupouns"
           element={
             <SellerProtectedRoute>
               <ShopAllCoupouns />
             </SellerProtectedRoute>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/dashboard-withdraw-money"
           element={
             <SellerProtectedRoute>
               <ShopWithDrawMoneyPage />
             </SellerProtectedRoute>
           }
-        />
+        /> */}
         <Route
           path="/dashboard-messages"
           element={
@@ -300,22 +300,22 @@ const App = () => {
             </ProtectedAdminRoute>
           }
         />
-         <Route
+         {/* <Route
           path="/admin-events"
           element={
             <ProtectedAdminRoute>
               <AdminDashboardEvents />
             </ProtectedAdminRoute>
           }
-        />
-         <Route
+        /> */}
+         {/* <Route
           path="/admin-withdraw-request"
           element={
             <ProtectedAdminRoute>
               <AdminDashboardWithdraw />
             </ProtectedAdminRoute>
           }
-        />
+        /> */}
       </Routes>
       <ToastContainer
         position="bottom-center"

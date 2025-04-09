@@ -12,14 +12,6 @@ export const navItems = [
       title: "Products",
       url: "/products",
     },
-    {
-      title: "Events",
-      url: "/events",
-    },
-    {
-      title: "FAQ",
-      url: "/faq",
-    },
   ];
   
   // branding data
@@ -27,7 +19,7 @@ export const navItems = [
     {
       id: 1,
       title: "Free Shipping",
-      Description: "From all orders over 100$",
+      Description: "From all orders over 100RS",
       icon: (
         <svg
           width="36"
@@ -187,7 +179,7 @@ export const navItems = [
     },
   ];
   
-  // categories data
+ // categories data
   export const categoriesData = [
     {
       id: 1,
@@ -260,7 +252,7 @@ export const navItems = [
     },
   ];
   
-  // product Data
+  //product Data
   export const productData = [
     {
       id: 1,
@@ -594,17 +586,13 @@ export const navItems = [
   export const footerProductLinks = [
     {
       name: "About us",
-      link: "/about"
     },
     {
       name: "Careers",
-      link: "/carrers"
+      link: "/instagram"
     },
     {
       name: "Store Locations",
-    },
-    {
-      name: "Our Blog",
     },
     {
       name: "Reviews",
@@ -612,38 +600,41 @@ export const navItems = [
   ];
   
   export const footercompanyLinks = [
-    {
-      name: "Game & Video",
-    },
-    {
-      name: "Phone &Tablets",
-    },
-    {
-      name: "Computers & Laptop",
-    },
-    {
-      name: "Sport Watches",
-    },
-    {
-      name: "Events",
-    },
+    // {
+    //   name: "Game & Video",
+    // },
+    // {
+    //   name: "Phone &Tablets",
+    // },
+    // {
+    //   name: "Computers & Laptop",
+    // },
+    // {
+    //   name: "Sport Watches",
+    // },
+    // {
+    //   name: "Events",
+    // },
+{
+    name :"Created with passion by Sharon, Vasant, Tharun, and Neil. Thank you for visiting!"
+}
   ];
   
-  export const footerSupportLinks = [
-    {
-      name: "FAQ",
-    },
-    {
-      name: "Reviews",
-    },
-    {
-      name: "Contact Us",
-    },
-    {
-      name: "Shipping",
-    },
-    {
-      name: "Live chat",
-    },
-  ];
+  // export const footerSupportLinks = [
+  //   {
+  //     name: "FAQ",
+  //   },
+  //   {
+  //     name: "Reviews",
+  //   },
+  //   {
+  //     name: "Contact Us",
+  //   },
+  //   {
+  //     name: "Shipping",
+  //   },
+  //   {
+  //     name: "Live chat",
+  //   },
+  // ];
   

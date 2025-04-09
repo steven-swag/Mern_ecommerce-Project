@@ -39,7 +39,7 @@ router.post("/create-shop", catchAsyncErrors(async (req, res, next) => {
 
     const activationToken = createActivationToken(seller);
 
-    const activationUrl = `https://eshop-tutorial-pyri.vercel.app/seller/activation/${activationToken}`;
+    const activationUrl = `const activationUrl = http://localhost:3000/seller/activation/${activationToken}`;
 
     try {
       await sendMail({
@@ -161,7 +161,7 @@ router.get(
   })
 );
 
-// log out from shop
+//log out from shop
 router.get(
   "/logout",
   catchAsyncErrors(async (req, res, next) => {
@@ -181,6 +181,9 @@ router.get(
     }
   })
 );
+
+
+
 
 // get shop info
 router.get(

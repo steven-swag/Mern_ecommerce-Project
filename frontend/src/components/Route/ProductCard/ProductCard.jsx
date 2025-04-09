@@ -88,11 +88,11 @@ const ProductCard = ({ data,isEvent }) => {
               <h5 className={`${styles.productDiscountPrice}`}>
                 {data.originalPrice === 0
                   ? data.originalPrice
-                  : data.discountPrice}
-                $
+                  : data.discountPrice }
+                 {" "} RS
               </h5>
               <h4 className={`${styles.price}`}>
-                {data.originalPrice ? data.originalPrice + " $" : null}
+                {data.originalPrice ? data.originalPrice + " RS" : null}
               </h4>
             </div>
             <span className="font-[400] text-[17px] text-[#68d284]">
@@ -103,7 +103,7 @@ const ProductCard = ({ data,isEvent }) => {
 
         {/* side options */}
         <div>
-          {click ? (
+          {/* {click ? (
             <AiFillHeart
               size={22}
               className="cursor-pointer absolute right-2 top-5"
@@ -119,7 +119,7 @@ const ProductCard = ({ data,isEvent }) => {
               color={click ? "red" : "#333"}
               title="Add to wishlist"
             />
-          )}
+          )} */}
           <AiOutlineEye
             size={22}
             className="cursor-pointer absolute right-2 top-14"
